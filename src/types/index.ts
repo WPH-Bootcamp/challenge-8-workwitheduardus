@@ -67,7 +67,13 @@ export interface ButtonProps {
 //   icon?: string;
 //   image?: string;
 // }
-
+export interface ServiceItem {
+  id: number;
+  title: string;
+  description: string;
+  icon?: string;
+  image?: string;
+}
 /**
  * Example: Team Member
  */
@@ -84,6 +90,18 @@ export interface ButtonProps {
 //   };
 // }
 
+export interface TeamMember {
+  id: number;
+  name: string;
+  position: string;
+  bio?: string;
+  image: string;
+  socialLinks?: {
+    linkedin?: string;
+    twitter?: string;
+    github?: string;
+  };
+}
 /**
  * Example: Testimonial
  */
@@ -96,6 +114,15 @@ export interface ButtonProps {
 //   avatar?: string;
 //   rating?: number;
 // }
+export interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  company: string;
+  content: string;
+  rating?: number;
+  avatar?: string;
+}
 
 // ==========================================
 // Navigation Types
