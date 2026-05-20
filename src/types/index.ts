@@ -167,3 +167,9 @@ export interface NavItem {
  * 5. Consider creating separate files jika types terlalu banyak
  *    Example: types/components.ts, types/data.ts, etc.
  */
+
+export interface ProcessStep {
+  id: number;
+  title: string;
+  description: string;
+}
