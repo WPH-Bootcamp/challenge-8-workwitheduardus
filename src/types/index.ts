@@ -99,7 +99,11 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
 //   href: string;
 //   external?: boolean;
 // }
-
+export interface NavItem {
+  label: string;
+  href: string;
+  external?: boolean;
+}
 // ==========================================
 // Form Types (if needed)
 // ==========================================
