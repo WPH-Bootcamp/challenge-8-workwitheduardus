@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import { NavItems } from "../../data/navigation.ts";
+import { companyInfo } from "../../data/company.ts";
 import Button from "../ui/Button";
 import logoImg from "../../assets/Logo-mobile.svg";
 
@@ -11,7 +13,7 @@ const Navbar = () => {
       <div className="mx-auto px-4 sm:px-6 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
           <img src={logoImg} alt="Logo" className="h-8 w-auto" />
-          <span className="text-base font-bold text-gray-800">Your Logo</span>
+          <span className="text-base font-bold text-gray-800">{companyInfo.name}</span>
         </a>
         <div className="hidden lg:flex items-center gap-3">
           {NavItems.map((item) => (

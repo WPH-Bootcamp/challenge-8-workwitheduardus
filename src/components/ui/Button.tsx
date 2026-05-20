@@ -10,8 +10,8 @@
  * 2. Adjust styling sesuai design Figma
  * 3. Add more variants jika diperlukan
  */
-
 import React from 'react';
+import { ButtonProps } from '../../types';
 
 // Type definition untuk button variants
 type ButtonVariant = 'primary' | 'secondary' | 'outline';
@@ -47,7 +47,7 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   disabled = false,
   type = 'button',
-}) => {
+}: ButtonProps) => {
   // Base styles yang selalu applied
   const baseStyles = 'font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';
 
@@ -66,7 +66,7 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   // Disabled styles
-  const disabledStyles = 'opacity-50 cursor-not-allowed';
+  const disabledStyles = disabled ?'opacity-50 cursor-not-allowed': "";
 
   // Combine all styles
   const buttonClasses = `
