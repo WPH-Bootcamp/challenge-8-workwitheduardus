@@ -20,7 +20,7 @@
  * Gunakan ini untuk Button component
  */
 export type ButtonVariant = 'primary' | 'secondary' | 'outline';
-
+export type ButtonSize = 'sm' | 'md' | 'lg';
 /**
  * Example: Button Props
  * Uncomment dan sesuaikan dengan kebutuhan
@@ -32,6 +32,16 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
 //   className?: string;
 //   disabled?: boolean;
 // }
+export interface ButtonProps {
+  variant?: ButtonVariant;
+  size?: ButtonSize;
+  children: React.ReactNode;
+  onClick?: () => void;
+  href?: string;
+  className?: string;
+  disabled?: boolean;
+  type?: 'button' | 'submit' | 'reset';
+}
 
 // ==========================================
 // Section Data Types

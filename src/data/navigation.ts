@@ -2,7 +2,7 @@ import type {
     NavItem,
 } from '../types';
 
-export const navigation: NavItem[] = [
+export const NavItems: NavItem[] = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Projects", href: "#projects" },

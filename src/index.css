@@ -10,6 +10,7 @@
 /* Tell Tailwind where to scan for classes */
 @source "./**/*.{js,jsx,ts,tsx}";
 @source "../index.html";
+@source "assets/**/*.{svg,png,jpg,jpeg,gif,webp}";
 
 /**
  * Custom Global Styles

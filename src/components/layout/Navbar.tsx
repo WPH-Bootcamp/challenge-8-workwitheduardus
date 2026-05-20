@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavItem } from "../../data/navigation.ts";
+import { NavItems } from "../../data/navigation.ts";
 import Button from "../ui/Button";
 import logoImg from "../../assets/Logo-mobile.svg";
 
@@ -14,13 +14,13 @@ const Navbar = () => {
           <span className="text-base font-bold text-gray-800">Your Logo</span>
         </a>
         <div className="hidden lg:flex items-center gap-3">
-          {NavItem.map((item) => (
+          {NavItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
               className="px-4 py-2 rounded-full text-sm font-semibold text-neutral-25 hover:bg-gray-100"
             >
-              {item.name}
+              {item.label}
             </a>
           ))}
         </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
 
       {isOpen && (
         <div className="lg-hidden bg-whhite border-t border-gray-100 px-4 pb-4">
-          {NavItem.map((item) => (
+          {NavItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
