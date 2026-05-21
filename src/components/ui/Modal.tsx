@@ -19,7 +19,7 @@ const Modal = ({ isOpen, onClose, type}: ModalProps) => {
                 <div className="flex justify-center mb-5">
                     <img 
                     src={isSuccess ? successImg : failedImg} 
-                    alt={isSuccess ? "Success" : "Failed"} /
+                    alt={isSuccess ? "Success" : "Failed"}
                     className="w-28 h-28 object-contain"/>
                 </div>
 
