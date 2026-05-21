@@ -1,16 +1,15 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Children } from "react";
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout = ({Children}: LayoutProps) => {
+const Layout = ({children}: LayoutProps) => {
     return (
         <div className="min-h-screen bg-white">
             <Navbar />
-            <main>{Children}</main>
+            <main>{children}</main>
             <Footer />
         </div>
     );
