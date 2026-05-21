@@ -173,3 +173,10 @@ export interface ProcessStep {
   title: string;
   description: string;
 }
+
+// --- Modal ---
+export interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  type: "success" | "error";
+}
