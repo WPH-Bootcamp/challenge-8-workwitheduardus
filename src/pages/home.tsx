@@ -1,15 +1,18 @@
-import Layout from "../components/layout/Layout";
+import Navbar from "../components/layout/Navbar";
+// import Footer from "../components/layout/Footer"
 import HeroSection from "../components/sections/HeroSection";
 import LogoBarSection from "../components/sections/LogoBarSection";
-import ServiceItem from "../components/sections/ServiceSection";
 
 const Home = () => {
     return (
-        <Layout>
+      <div className="min-h-screen bg-white">
+        <Navbar/>
+        <main>
             <HeroSection />
             <LogoBarSection />
-            <ServiceItem />
-        </Layout>
+        </main>
+        {/* <Footer/> */}
+      </div>
     );
 };
 

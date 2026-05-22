@@ -1,21 +1,17 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NavItems } from "../../data/navigation.ts";
-import { companyInfo } from "../../data/company.ts";
 import Button from "../ui/Button";
-import logoImg from "../../assets/Logo-mobile.svg";
+import Logo from "../../assets/Logo-dekstop.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
-      <div className="mx-auto px-4 sm:px-6 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2.5">
-          <img src={logoImg} alt="Logo" className="h-8 w-auto" />
-          <span className="text-base font-bold text-gray-800">
-            {companyInfo.name}
-          </span>
+      <div className="max-w-[1160px]mx-auto px-4 sm:px-6 flex items-center justify-between">
+        <a href="#">
+          <Logo />
         </a>
         <div className="hidden lg:flex items-center gap-3">
           {NavItems.map((item) => (
@@ -60,8 +56,7 @@ const Navbar = () => {
               variant="primary"
               size="md"
               href="#contact"
-              className="w-full"
-            >
+              className="w-full">
               Let's Talk
             </Button>
           </div>

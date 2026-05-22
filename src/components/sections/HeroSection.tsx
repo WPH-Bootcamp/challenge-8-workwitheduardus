@@ -9,14 +9,11 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <div className="flex-1">
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-neutral-50 leading-tight">
-              {companyInfo.name}
-              {""}
+              {companyInfo.heroTitle}{""}
+              <span className="text-primary-100">{companyInfo.heroTagline}</span>
             </h1>
             <p className="mt-5 text-base text-gray-400 leading-relaxed max-w-md">
-              {companyInfo.socialLinks.facebook}
-              {companyInfo.socialLinks.instagram}
-              {companyInfo.socialLinks.linkedin}
-              {companyInfo.socialLinks.tiktok}
+              {companyInfo.description}
             </p>
             <div className="mt-8">
               <Button variant="primary" size="lg" href="#contact">

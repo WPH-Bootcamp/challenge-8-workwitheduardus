@@ -1,7 +1,9 @@
 export const companyInfo = {
   name: "Company Name",
-  tagline: "Your company tagline",
-  description: "Brief description about the company...",
+  heroTitle: "Your Text Partner For",
+  heroTagline: "Smarter Grow",
+  description:
+    "We deliver tailored IT solutions to help you scale with speed and confidence.",
   email: "contact@company.com",
   phone: "+62 xxx-xxxx-xxxx",
   address: "Company address here",
