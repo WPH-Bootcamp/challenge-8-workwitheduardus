@@ -1,4 +1,4 @@
-import Button from "../ui/Button.example.tsx";
+import Button from "../ui/Button";
 import { companyInfo } from "../../data/company.ts";
 import heroImg from "../../assets/Image-Hero.png";
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NavItems } from "../../data/navigation.ts";
 import { companyInfo } from "../../data/company.ts";
-import Button from "../ui/Button.example.tsx";
+import Button from "../ui/Button";
 import logoImg from "../../assets/Logo-mobile.svg";
 
 const Navbar = () => {
