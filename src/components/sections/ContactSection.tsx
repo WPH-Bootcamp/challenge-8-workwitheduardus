@@ -13,14 +13,14 @@ const serviceOptions = [
 
 const inputClass = "w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-200 transition-colors placeholder-gray-400";
 
-cosnt ContactSection = () => {
+const ContactSection = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         message: "",
     });
     const [selectedService, setSelectedService] = useState<string[]>([]);
-    const [modal, setModal] = useState<{isOpen: Boolean;
+    const [modal, setModal] = useState<{ isOpen: boolean;
         type: ModalProps["type"]}>({
         isOpen: false,
         type: "success",
