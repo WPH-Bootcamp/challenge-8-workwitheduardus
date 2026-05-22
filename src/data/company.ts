@@ -1,9 +1,14 @@
 export const companyInfo = {
-    name: "Your Logo",
-    socialLinks: {
-        facebook: "https://facebook.com/yourcompany",
-        instagram: "https://instagram.com/yourcompany",
-        linkedin: "https://linkedin.com/company/yourcompany",
-        tiktok: "https://tiktok.com/@yourcompany",
-    },
+  name: "Company Name",
+  tagline: "Your company tagline",
+  description: "Brief description about the company...",
+  email: "contact@company.com",
+  phone: "+62 xxx-xxxx-xxxx",
+  address: "Company address here",
+  socialLinks: {
+    facebook: "https://facebook.com/...",
+    instagram: "https://instagram.com/...",
+    linkedin: "https://linkedin.com/...",
+    tiktok: "https://tiktok.com/...",
+  },
 };
