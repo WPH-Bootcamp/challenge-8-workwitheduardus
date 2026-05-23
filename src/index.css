@@ -13,24 +13,24 @@
 @source "assets/**/*.{svg,png,jpg,jpeg}";
 
 @theme{
-  --color-primary-100: #FFE0D8
-  --color-primary-200: #FF623E
-  --color-primary-300: #CC4E32
-  --color-primary-400: #80311F
-  --color-neutral-25: #FDFDFD
-  --color-neutral-50: #FAFAFA
-  --color-neutral-100: #F5F5F5
-  --color-neutral-200: #E9EAEB
-  --color-neutral-300: #D5D7DA
-  --color-neutral-400: #A4A7AE
-  --color-neutral-500: #717680
-  --color-neutral-600: #535862
-  --color-neutral-700: #414651
-  --color-neutral-800: #252B37
-  --color-neutral-900: #181D27
-  --color-neutral-950: ##0A0D12
-  --color-white: #FFFFFF
-  --color-black: #000000
+  --color-primary-100: #FFE0D8;
+  --color-primary-200: #FF623E;
+  --color-primary-300: #CC4E32;
+  --color-primary-400: #80311F;
+  --color-neutral-25: #FDFDFD;
+  --color-neutral-50: #FAFAFA;
+  --color-neutral-100: #F5F5F5;
+  --color-neutral-200: #E9EAEB;
+  --color-neutral-300: #D5D7DA;
+  --color-neutral-400: #A4A7AE;
+  --color-neutral-500: #717680;
+  --color-neutral-600: #535862;
+  --color-neutral-700: #414651;
+  --color-neutral-800: #252B37;
+  --color-neutral-900: #181D27;
+  --color-neutral-950: #0A0D12;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
   --font-sans: Poppins, sans-serif, system-ui;
 }
 /**
@@ -47,9 +47,9 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(----color-white);
+  background-color: var(--color-white);
   line-height: 1.6;
-  color: var(--color-neutral-25);
+  color: var(--color-neutral-950);
 }
   ::-webkit-scrollbar {
   width: 10px;

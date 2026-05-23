@@ -8,9 +8,13 @@ const HeroSection = () => {
       <div className="max-w-[1160px] mx-auto px-4 sm:px-6 py-12 lg:py-20">
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <div className="flex-1">
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-neutral-50 leading-tight">
-              {companyInfo.heroTitle}{""}
-              <span className="text-primary-100">{companyInfo.heroTagline}</span>
+            <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-black leading-tight">
+              {" "}
+              {companyInfo.heroTitle}
+              <br />
+              <span className="text-primary-200">
+                {companyInfo.heroTagline}
+              </span>
             </h1>
             <p className="mt-5 text-base text-gray-400 leading-relaxed max-w-md">
               {companyInfo.description}

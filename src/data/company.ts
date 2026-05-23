@@ -1,6 +1,6 @@
 export const companyInfo = {
   name: "Company Name",
-  heroTitle: "Your Text Partner For",
+  heroTitle: "Your Tech Partner For",
   heroTagline: "Smarter Grow",
   description:
     "We deliver tailored IT solutions to help you scale with speed and confidence.",

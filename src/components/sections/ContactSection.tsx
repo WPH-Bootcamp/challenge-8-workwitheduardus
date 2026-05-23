@@ -69,7 +69,7 @@ const ContactSection = () => {
     return (
         <>
             <section id="contact" className="bg-white">
-                <div className="max-w-[1160px] mx-auto px-4 sm:px-5 py-16 lh:py-20">
+                <div className="max-w-[1160px] mx-auto px-4 sm:px-5 py-16 lg:py-20">
                     {/* header */}
                     <div className="text-center mb-10">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-25">Ready to Start? Let's Talk.
@@ -79,7 +79,7 @@ const ContactSection = () => {
                         </p>
                     </div>
                     {/* form */}
-                    <form className="max-2-[664px] mx-auto flex flex-col gap-4" onSubmit={handleSubmit}>
+                    <form className="max-w-[664px] mx-auto flex flex-col gap-4" onSubmit={handleSubmit}>
                         <div className="flex flex-col gap-1.5">
                             <label className="text-sm font-medium text-neutral-25">Name</label>
                             <input 
@@ -115,8 +115,8 @@ const ContactSection = () => {
                         </div>
 
                         {/* Services */}
-                        <div className="flex flex-box gap-3">
-                            <label className="text-sm font-bold text-neutral-25 font-weight-700">Service</label>
+                        <div className="flex flex-col gap-3">
+                            <label className="text-sm font-bold text-neutral-25 font-bold">Service</label>
                             <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-x-8 gap-y-3">
                                 {serviceOptions.map((service) => {
                                     const checked = selectedService.includes(service);
@@ -152,13 +152,13 @@ const ContactSection = () => {
                                                 </span>
                                         </label>
                                     );
-                                })};
+                                })}
                             </div>
                         </div>
 
                         <button
                         type="submit"
-                        className="w-full mt-2 bg-primary-200 text-white font-semibold py-3.5 rounded-full hover:color-primary-300 transition-colors cursor-pointer text-sm p-2 gap-1">
+                        className="w-full mt-2 bg-primary-200 text-white font-semibold py-3.5 rounded-full hover:bg-primary-300 transition-colors cursor-pointer text-sm p-2 gap-1">
                             Send
                         </button>
                     </form>

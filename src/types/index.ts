@@ -168,15 +168,24 @@ export interface NavItem {
  *    Example: types/components.ts, types/data.ts, etc.
  */
 
-export interface ProcessStep {
-  id: number;
-  title: string;
-  description: string;
-}
 
-// --- Modal ---
+
+// Modal
 export interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   type: "success" | "error";
+}
+
+// Data Types
+
+export interface Stat {
+  value: string;
+  label: string;  
+}
+
+export interface ProcessStep {
+  id: number;
+  title: string;
+  description: string;
 }

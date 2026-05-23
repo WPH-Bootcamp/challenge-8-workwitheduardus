@@ -1,4 +1,4 @@
-import type {ProcessStep} from '../types';
+import type {ProcessStep, Stat} from '../types';
 
 export const ProcessSteps: ProcessStep[] = [
     { id: 1,
@@ -20,3 +20,10 @@ export const ProcessSteps: ProcessStep[] = [
     title: "Launch & Growth",
     description: "Scale, Measure & Improve Continuously"},
   ];
+
+  export const stats: Stat []= [
+    {value: "50+", label: "Project Delivered"},
+    {value: "5+", label: "Years of Experience"},
+    {value: "10+", label: "Industry Awards Won"},
+    {value: "100%", label: "Client Satisfaction Rate"},
+  ]

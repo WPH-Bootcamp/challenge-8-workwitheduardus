@@ -8,13 +8,13 @@ const Modal = ({ isOpen, onClose, type}: ModalProps) => {
     const isSuccess = type === "success";
 
     return (
-        <div className="fixed isnert-0 z-[100] flex items-center justify-center p-4" onClick={onClose}>
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" onClick={onClose}>
             
             {/* overlay */}
-            <div className="absolute insert-0 bg-black bg-blur-sm"/>
+            <div className="absolute inset-0 bg-black backdrop-blur-sm"/>
 
             {/* modal content */}
-            <div className="relative bg-white rounded-3xl p-8 max-2-sm w-full text-center shadow-2xl" onClick={(e) => e.stopPropagation}>
+            <div className="relative bg-white rounded-3xl p-8 max-w-sm w-full text-center shadow-2xl" onClick={(e) => e.stopPropagation()}>
                 {/* icon */}
                 <div className="flex justify-center mb-5">
                     <img 
