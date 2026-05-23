@@ -32,6 +32,7 @@
   --color-white: #FFFFFF;
   --color-black: #000000;
   --font-sans: Poppins, sans-serif, system-ui;
+  --animate-marquee: marque 25s linear infinite;
 }
 /**
  * Custom Global Styles
@@ -50,6 +51,11 @@ body {
   background-color: var(--color-white);
   line-height: 1.6;
   color: var(--color-neutral-950);
+}
+
+@keyframes marquee{
+  0% {transform: translateX(0); }
+  100% {transform: translateX(-50); }
 }
   ::-webkit-scrollbar {
   width: 10px;

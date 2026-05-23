@@ -189,3 +189,17 @@ export interface ProcessStep {
   title: string;
   description: string;
 }
+
+export interface SectionHeadingProps {
+  tag?: string;
+  title: string;
+  description: string;
+  align?: "left" | "center" | "right";
+  className?: string
+}
+
+export interface StatCardProps {
+  value: string;
+  label: string;
+  className?: string;
+}
