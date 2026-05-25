@@ -207,3 +207,10 @@ export interface StatCardProps {
   label: string;
   className?: string;
 }
+
+export interface IndustryItem {
+  id: string;
+  label: string;
+  description: string;
+  image: string;
+}

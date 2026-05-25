@@ -4,6 +4,8 @@ import HeroSection from "../components/sections/HeroSection";
 import LogoBarSection from "../components/sections/LogoBarSection";
 import StatSection from "../components/sections/StatsSection";
 import ProcessSection from "../components/sections/ProcessSection";
+import ServiceSection from "../components/sections/ServiceSection";
+import IndustrySection from "../components/sections/IndustrySection";
 
 const Home = () => {
     return (
@@ -14,6 +16,8 @@ const Home = () => {
             <LogoBarSection />
             <StatSection />
             <ProcessSection />
+            <ServiceSection />
+            <IndustrySection />
         </main>
         {/* <Footer/> */}
       </div>
