@@ -74,6 +74,10 @@ export interface ServiceItem {
   icon?: string;
   image?: string;
 }
+
+export interface ServiceCardProps {
+  service: ServiceItem;
+}
 /**
  * Example: Team Member
  */
