@@ -32,7 +32,7 @@
   --color-white: #FFFFFF;
   --color-black: #000000;
   --font-sans: Poppins, sans-serif, system-ui;
-  --animate-marquee: marque 25s linear infinite;
+  --animate-marque: marque 25s linear infinite;
 }
 /**
  * Custom Global Styles
@@ -55,8 +55,11 @@ body {
 
 @keyframes marquee{
   0% {transform: translateX(0); }
-  100% {transform: translateX(-50); }
+  100% {transform: translateX(-50%); }
 }
+
+.scrollbar-hide::-webkit-scrollbar {display: none;}
+.scrollbaar-hide {-ms-overflow-style: none; scrollbar-width: none;}
   ::-webkit-scrollbar {
   width: 10px;
   }

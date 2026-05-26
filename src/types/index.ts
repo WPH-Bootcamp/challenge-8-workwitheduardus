@@ -128,6 +128,10 @@ export interface Testimonial {
   avatar?: string;
 }
 
+export interface TestimonialCardProps {
+  testimonial: Testimonial;
+}
+
 // ==========================================
 // Navigation Types
 // ==========================================
