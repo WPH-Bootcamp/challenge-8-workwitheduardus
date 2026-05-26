@@ -6,6 +6,7 @@ import StatSection from "../components/sections/StatsSection";
 import ProcessSection from "../components/sections/ProcessSection";
 import ServiceSection from "../components/sections/ServiceSection";
 import IndustrySection from "../components/sections/IndustrySection";
+import PortfolioSection from "../components/sections/PortfolioSection";
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <ProcessSection />
             <ServiceSection />
             <IndustrySection />
+            <PortfolioSection />
         </main>
         {/* <Footer/> */}
       </div>

@@ -24,7 +24,9 @@ const SectionHeading = ({
                 {title}
             </h2>
             {description && (
-                <p className=" text-base text-gray-400 leading-relaxed max-w-xl">
+                <p className={[
+                    "text-neutral-500 leading-relaxed", align === "center" ? "max-w-2xl mx-auto" : "max-w-xl",
+                ].join(" ")}>
                     {description}
                 </p>
             )}

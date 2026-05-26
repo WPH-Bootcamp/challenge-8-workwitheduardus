@@ -19,8 +19,8 @@
  * Button variant types
  * Gunakan ini untuk Button component
  */
-export type ButtonVariant = 'primary' | 'secondary' | 'outline';
-export type ButtonSize = 'sm' | 'md' | 'lg';
+export type ButtonVariant = "primary" | "secondary" | "outline";
+export type ButtonSize = "sm" | "md" | "lg";
 /**
  * Example: Button Props
  * Uncomment dan sesuaikan dengan kebutuhan
@@ -40,7 +40,7 @@ export interface ButtonProps {
   href?: string;
   className?: string;
   disabled?: boolean;
-  type?: 'button' | 'submit' | 'reset';
+  type?: "button" | "submit" | "reset";
 }
 
 // ==========================================
@@ -172,8 +172,6 @@ export interface NavItem {
  *    Example: types/components.ts, types/data.ts, etc.
  */
 
-
-
 // Modal
 export interface ModalProps {
   isOpen: boolean;
@@ -185,7 +183,7 @@ export interface ModalProps {
 
 export interface Stat {
   value: string;
-  label: string;  
+  label: string;
 }
 
 export interface ProcessStep {
@@ -199,7 +197,7 @@ export interface SectionHeadingProps {
   title: string;
   description: string;
   align?: "left" | "center" | "right";
-  className?: string
+  className?: string;
 }
 
 export interface StatCardProps {
@@ -213,4 +211,16 @@ export interface IndustryItem {
   label: string;
   description: string;
   image: string;
+}
+
+export interface PortfolioItem {
+  id: number;
+  category: string;
+  title: string;
+  image: string;
+}
+
+export interface PortfolioCardProps {
+  item: PortfolioItem;
+  imgSrc: string;
 }
