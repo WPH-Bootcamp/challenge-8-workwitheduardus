@@ -228,3 +228,20 @@ export interface PortfolioCardProps {
   item: PortfolioItem;
   imgSrc: string;
 }
+
+export interface FAQIteam {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+export interface AccordionProps {
+  items: AccordionItem[];
+  variant?: "light" | "dark";
+}
+
+export interface AccordionItem {
+  id: number;
+  question: string;
+  answer: string;
+}
