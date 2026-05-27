@@ -245,3 +245,9 @@ export interface AccordionItem {
   question: string;
   answer: string;
 }
+
+export interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  type: "success" | "error";
+}

@@ -72,7 +72,7 @@ const ContactSection = () => {
                 <div className="max-w-[1160px] mx-auto px-4 sm:px-5 py-16 lg:py-20">
                     {/* header */}
                     <div className="text-center mb-10">
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-25">Ready to Start? Let's Talk.
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900">Ready to Start? Let's Talk.
                         </h2>
                         <p className="mt-3 text-base text-gray-400">
                             Tell us what you need, and we’ll get back to you soon.

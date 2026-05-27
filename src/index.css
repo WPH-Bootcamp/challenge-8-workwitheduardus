@@ -31,6 +31,7 @@
   --color-neutral-950: #0A0D12;
   --color-white: #FFFFFF;
   --color-black: #000000;
+  --color-border: #DFDFDF
   --font-sans: Poppins, sans-serif, system-ui;
   --animate-marque: marque 25s linear infinite;
 }

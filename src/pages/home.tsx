@@ -9,6 +9,8 @@ import IndustrySection from "../components/sections/IndustrySection";
 import PortfolioSection from "../components/sections/PortfolioSection";
 import TestimonialsSection from "../components/sections/TestimonialsSection";
 import FAQSection from "../components/sections/FAQSection";
+import ContactSection from "../components/sections/ContactSection";
+import Footer from "../components/layout/Footer"
 
 const Home = () => {
     return (
@@ -24,8 +26,9 @@ const Home = () => {
             <PortfolioSection />
             <TestimonialsSection />
             <FAQSection />
+            <ContactSection />
         </main>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     );
 };
