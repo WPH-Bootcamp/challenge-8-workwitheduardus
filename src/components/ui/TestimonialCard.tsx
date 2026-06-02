@@ -3,6 +3,7 @@ import starRating from "../../assets/star-rating.png";
 
 const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
   return (
+    
     <div className="relative rounded-2xl border border-neutral-200 bg-white p-8 text-center flex flex-col items-center">
       <span className="absolute -top-4 left-6 text-[80px] leading-none text-primary-200 font-serif select-none">
         "
@@ -24,7 +25,7 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
         {testimonial.name}
       </div>
       <div className="text-primary-200 text-sm font-medium mb-4">
-        {testimonial.role} at{testimonial.company}
+        {testimonial.role} at {testimonial.company}
       </div>
       <img
         src={testimonial.avatar}

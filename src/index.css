@@ -1,22 +1,21 @@
-/**
- * Main CSS File
- *
- * Tailwind CSS v4 - Using new @import syntax
- * Docs: https://tailwindcss.com/docs/installation/using-vite
- */
 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
 /* Tell Tailwind where to scan for classes */
+
 @source "./**/*.{js,jsx,ts,tsx}";
 @source "../index.html";
 @source "assets/**/*.{svg,png,jpg,jpeg}";
 
 @theme{
+  /* Primary */
   --color-primary-100: #FFE0D8;
   --color-primary-200: #FF623E;
   --color-primary-300: #CC4E32;
   --color-primary-400: #80311F;
+
+  /* Neutral */
   --color-neutral-25: #FDFDFD;
   --color-neutral-50: #FAFAFA;
   --color-neutral-100: #F5F5F5;
@@ -31,18 +30,13 @@
   --color-neutral-950: #0A0D12;
   --color-white: #FFFFFF;
   --color-black: #000000;
-  --color-border: #DFDFDF
-  --font-sans: Poppins, sans-serif, system-ui;
-  --animate-marque: marque 25s linear infinite;
-}
-/**
- * Custom Global Styles
- *
- * Add your custom global styles here if needed
- * Prefer using Tailwind utilities in components
- */
 
-/* Smooth scrolling for anchor links */
+  /* Font */
+  --font-sans: "Quicksand", sans-serif, system-ui;
+
+  /* Animations */
+  --animate-marquee: marquee 25s linear infinite;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -74,23 +68,3 @@ body {
   ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-/* Optional: Custom scrollbar styles */
-/* Uncomment if you want custom scrollbar
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-*/
