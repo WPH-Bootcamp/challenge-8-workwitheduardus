@@ -46,6 +46,8 @@ body {
   background-color: var(--color-white);
   line-height: 1.6;
   color: var(--color-neutral-950);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 @keyframes marquee{
@@ -55,16 +57,114 @@ body {
 
 .scrollbar-hide::-webkit-scrollbar {display: none;}
 .scrollbaar-hide {-ms-overflow-style: none; scrollbar-width: none;}
-  ::-webkit-scrollbar {
-  width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+
+@keyframes slide-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
-  ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+.animate-slide-left {
+  animation: slide-left 20s linear infinite;
 }
+.animate-slide-left:hover {
+  animation-play-state: paused;
+}
+ 
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f5f5f5; }
+::-webkit-scrollbar-thumb { background: #D5D7DA; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #A4A7AE; }
+
+/* dark mode */
+html.dark body    { background-color: #0A0D12; color: #FDFDFD; }
+html.dark section { background-color: #0A0D12; }
+
+/* Navbar */
+html.dark body    { background-color: #0A0D12; color: #FDFDFD; }
+html.dark section { background-color: #0A0D12; }
+
+/* Heading & Text */
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4 { color: #FDFDFD; }
+ 
+html.dark p                  { color: #A4A7AE; }
+html.dark .text-neutral-950  { color: #FDFDFD !important; }
+html.dark .text-neutral-900  { color: #FDFDFD !important; }
+html.dark .text-neutral-600  { color: #A4A7AE !important; }
+html.dark .text-neutral-500  { color: #717680 !important; }
+html.dark .text-neutral-400  { color: #717680 !important; }
+html.dark .text-gray-400     { color: #717680 !important; }
+html.dark .text-black        { color: #FDFDFD !important; }
+
+/* Backgrounds */
+html.dark .bg-white          { background-color: #0A0D12 !important; }
+html.dark .bg-gray-50        { background-color: #181D27 !important; }
+html.dark .bg-neutral-50     { background-color: #181D27 !important; }
+html.dark .bg-neutral-100    { background-color: #252B37 !important; }
+
+/* Borders */
+html.dark .border-gray-200   { border-color: #252B37 !important; }
+html.dark .border-neutral-200 { border-color: #252B37 !important; }
+html.dark .border-\[#DFDFDF\] { border-color: #252B37 !important; }
+html.dark .hover\:bg-neutral-100:hover { background-color: #252B37 !important; }
+
+/* Service */
+html.dark #service .bg-neutral-50,
+html.dark #service .bg-\[#FAFAFA\] {
+  background-color: #181D27 !important;
+}
+html.dark #service .border-neutral-200,
+html.dark #service .border-neutral-300 {
+  border-color: #252B37 !important;
+}
+html.dark #service h3 { color: #FDFDFD !important; }
+html.dark #service p  { color: #A4A7AE !important; }
+
+/* Industry */
+html.dark #industry .text-black        { color: #FDFDFD !important; }
+html.dark #industry .text-neutral-500  { color: #717680 !important; }
+html.dark #industry .text-neutral-600  { color: #A4A7AE !important; }
+html.dark #industry .text-neutral-400  { color: #717680 !important; }
+html.dark #industry p                  { color: #A4A7AE !important; }
+
+/* FAQ Questions */
+html.dark #faq h2              { color: #FDFDFD !important; }
+html.dark #faq p               { color: #A4A7AE !important; }
+html.dark #faq .text-gray-400  { color: #717680 !important; }
+html.dark #faq .text-neutral-900 { color: #FDFDFD !important; }
+html.dark #faq .text-neutral-500 { color: #A4A7AE !important; }
+ 
+
+/* Accordion */
+html.dark #faq .border-neutral-200 { border-color: #252B37 !important; }
+html.dark #faq button span.text-neutral-900 { color: #FDFDFD !important; }
+html.dark #faq .border-neutral-200.text-neutral-400 { color: #717680 !important; }
+ 
+
+/* Contact */
+html.dark #contact h2           { color: #FDFDFD !important; }
+html.dark #contact p            { color: #A4A7AE !important; }
+html.dark #contact label        { color: #FDFDFD !important; }
+html.dark #contact span         { color: #FDFDFD !important; }
+ 
+html.dark #contact input,
+html.dark #contact textarea {
+  background-color: #181D27 !important;
+  border-color:     #252B37 !important;
+  color:            #FDFDFD !important;
+}
+html.dark #contact input::placeholder,
+html.dark #contact textarea::placeholder { color: #717680 !important; }
+ 
+html.dark #contact .border-gray-300 { border-color: #414651 !important; }
+
+/* Footer */
+html.dark footer                        { background-color: #0A0D12 !important; }
+html.dark footer > div > div           { background-color: #181D27 !important; border-color: #252B37 !important; }
+html.dark footer h2                    { color: #FDFDFD !important; }
+html.dark footer a                     { color: #FDFDFD !important; }
+html.dark footer .border-\[#DFDFDF\]  { border-color: #252B37 !important; }
+html.dark footer .border-t             { border-color: #252B37 !important; }
+html.dark footer img[alt]              { filter: brightness(0) invert(1); }
+html.dark footer .hover\:bg-neutral-100:hover { background-color: #252B37 !important; }

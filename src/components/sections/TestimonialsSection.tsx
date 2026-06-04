@@ -15,14 +15,22 @@ const TestimonialsSection = () => {
                 <TestimonialCard key={t.id} testimonial={t} />
             ))}
           </div>
-          <div className="md:hidden overflow-x-auto snap-x snap-mandatory flex gap-5 pb-4 mx-4 px-4 scrollbar-hide">
-          {testimonials.map((t) => (
-            <div key={t.id} className="snap-center shrink-0 w-[cal(100vw-48px)]">
-                <TestimonialCard testimonial={t} />
-          </div>
+          <div className="md:hidden px-4">
+            <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide">{testimonials.map((t) => (
+              <div
+              key={t.id}
+              className="snap-center shrink-0 w-[calc(100vw-32px)] max-w-[344px]">
+              <TestimonialCard testimonial={t} />
+              </div>
           ))}
         </div>
-    </div>
+         <div className="flex justify-center gap-2 mt-4">
+          <span className="w-2 h-2 rounded-full bg-primary-200"></span>
+          <span className="w-2 h-2 rounded-full bg-neutral-300"></span>
+           <span className="w-2 h-2 rounded-full bg-neutral-300"></span>
+          </div>
+        </div>
+        </div>
       </section>
     );
 };

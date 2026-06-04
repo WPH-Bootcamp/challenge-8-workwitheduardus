@@ -6,9 +6,9 @@ const IndustrySection = () => {
     const current = industries.find((i) => i.id === active) ?? industries[0];
 
     return (
-      <section className="bg-white gap-4">
+      <section id="industry" className="bg-white gap-4">
         <div className="max-w-[1160px] mx-auto px-4 sm:px-6 py-16 lg:py-20">
-          <div className="text-center mb-10">
+          <div className="text-left mb-10">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900 mb-2">
               Build for Your Industry
             </h2>

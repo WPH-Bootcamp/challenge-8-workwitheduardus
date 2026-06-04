@@ -2,7 +2,7 @@ import type { StatCardProps } from "../../types";
 
 const StatCard = ({value, label, className = ""}: StatCardProps) => {
     return (
-        <div className={["flex flex-col items-center justify-center text-center p-4", "w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] lg:w-[275px] lg:h-[275px]","rounded-full border border-neutral-900 bg-gray-50", className,
+        <div className={["flex flex-col items-center justify-center text-center p-4", "w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] lg:w-[275px] lg:h-[275px]","rounded-full border border-neutral-300 bg-gray-50", className,
         ].join(" ")}
         >
         <span className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-200">
